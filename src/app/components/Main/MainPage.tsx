@@ -29,7 +29,7 @@ export default function MainPage() {
 
 	return (
 		<div className="relative min-h-screen items-center justify-center bg-gray-100 flex flex-col bg-white text-base sm:text-lg md:text-xl lg:text-2xl transition-colors hover:text-gray-700">
-			<header className="fixed w-full top-0 left-0 right-0 z-20">
+			<header className="sticky w-full top-0 left-0 right-0 z-20">
 				<SearchBar />
         <TopNav categories={categories || []}
           onCategoryClick={handleCategoryClick} />
