@@ -5,6 +5,7 @@
 ## 🚀 Quick start
 
 1.  **Step 1.**
+    Now you are in root project
     Change  Env file Database postgres match with your local
     ```sh
     postgresql://username:password@host:port/database?schema=schema_name
@@ -14,8 +15,6 @@
 1.  **Step 2.**
     Install package
     ```sh
-    #Go in to project
-    # And  then
     npm i
     ```
 1.  **Step 4.**
@@ -30,7 +29,11 @@
 1.  **Step 4.**
 
     Start your project and  access localhost:3000
+    Get back to root project
+
     ```sh
-    #
+    #  get back  to root project
+    cd ..
+    #  start server
     npm run dev
     ```
