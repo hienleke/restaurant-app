@@ -1,0 +1,25 @@
+{
+    "categories": {
+      "SUSHI": "Sushi & Seafood",
+      "UNAGI": "Eel",
+      "TEMPURA": "Tempura",
+      "TONKATSU": "Tonkatsu & Kushikatsu",
+      "YAKITORI": "Yakitori & Skewers",
+      "SUKIYAKI": "Sukiyaki & Shabu-Shabu",
+      "SOBA": "Soba & Udon",
+      "RAMEN": "Ramen & Tsukemen",
+      "YAKISOBA": "Yakisoba",
+      "OKONOMIYAKI": "Okonomiyaki & Takoyaki",
+      "DONBURI": "Rice Bowls",
+      "ODEN": "Oden",
+      "KAISEKI": "Kaiseki & Japanese Cuisine",
+      "HAMBAGU": "Hamburg Steak & Omelette Rice",
+      "TEPPANYAKI": "Steak & Teppanyaki",
+      "CURRY": "Curry",
+      "YAKINIKU": "Yakiniku & Hormone",
+      "NABE": "Nabe",
+      "CAFE": "Cafe & Dessert",
+      "IZAKAYA": "Izakaya & Bar",
+      "OTHER": "Other Japanese Food"
+    }
+  }

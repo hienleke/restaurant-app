@@ -1,0 +1,29 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Restaurant {
+  id          String    @id @default(uuid())
+  name        String
+  description String
+  rating      Float
+  ratingCount Int
+  categoryId  Int?      // Thêm "?" để cho phép NULL nếu không liên kết với Category
+  city        String
+  priceRange  String
+  images      String[]  @default([])
+  featured    Json?
+  isFavorite  Boolean   @default(false)
+}
+
+model Category {
+  id          Int         @id @default(autoincrement()) // Auto-increment integer id
+  name        String
+  description String?
+  // Loại bỏ restaurants để loại bỏ mối quan hệ one-to-many
+}
