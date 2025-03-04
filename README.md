@@ -23,18 +23,13 @@
     ```sh
     #init  database
     npx prisma migrate dev --name init
-    #
-    npx prisma db seed
+    #  cd  to prisma folder and seed  data for database
+    cd prisma
+    node seed.ts
     ```
 1.  **Step 4.**
 
-    Start your project
-    ```sh
-    #
-    npm run dev
-    ```
-1.  **Step 5.**
-    Accesss to host : 3000 default 
+    Start your project and  access localhost:3000
     ```sh
     #
     npm run dev
