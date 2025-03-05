@@ -24,7 +24,7 @@
     npx prisma migrate dev --name init
     #  cd  to prisma folder and seed  data for database
     cd prisma
-    node seed.ts
+    node seed.js
     ```
 1.  **Step 4.**
 
