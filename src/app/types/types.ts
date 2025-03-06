@@ -15,6 +15,6 @@ export interface Restaurant {
   city: string;
   priceRange: string;
   images: string[];
-  featured: string | null | undefined |any;
+  featured?: any;
   isFavorite: boolean;
 }

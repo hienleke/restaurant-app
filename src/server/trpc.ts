@@ -5,6 +5,19 @@ import {transalte} from "./translate";
 
 const prisma = new PrismaClient();
 
+const restaurantSchema = z.object({
+  id: z.string(),
+  name: z.string(),
+  description: z.string(),
+  rating: z.number(),
+  ratingCount: z.number(),
+  categoryId: z.number().nullable(),
+  city: z.string(),
+  priceRange: z.string(),
+  images: z.array(z.string()),
+  featured: z.any(), // Avoid deep inference
+  isFavorite: z.boolean(),
+});
 export const createTRPCContext = () => ({
   prisma,
 });
@@ -12,7 +25,7 @@ export const createTRPCContext = () => ({
 const t = initTRPC.context<typeof createTRPCContext>().create();
 
 export const appRouter = t.router({
-  getRestaurants: t.procedure.query(async ({ ctx }) => {
+  getRestaurants: t.procedure.output(z.array(restaurantSchema)).query(async ({ ctx }) => {
     const result = await ctx.prisma.restaurant.findMany();
     return result;
   }),
