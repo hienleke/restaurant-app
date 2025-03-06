@@ -1,7 +1,7 @@
 export interface Category {
   id: number;          
   name: string;
-  description?: string | null;
+  description: string | null ;
 
 }
 
@@ -15,6 +15,6 @@ export interface Restaurant {
   city: string;
   priceRange: string;
   images: string[];
-  featured?: any;
+  featured: string | null | undefined |any;
   isFavorite: boolean;
 }
